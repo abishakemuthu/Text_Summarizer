@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Set up OpenAI API key
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 # MongoDB credentials
 username = urllib.parse.quote_plus("Abishake")
